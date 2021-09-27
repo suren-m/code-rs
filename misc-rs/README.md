@@ -1,6 +1,3 @@
-# rsw
-Rust Workshop
-
 ## Topics
 
 ### Rust Installation 
