@@ -1,0 +1,194 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'local-cluster-bootstrap'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=local-cluster-bootstrap"
+                ],
+                "filter": {
+                    "name": "local-cluster-bootstrap",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'corgi-local-cluster-bootstrap'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=corgi-local-cluster-bootstrap",
+                    "--package=local-cluster-bootstrap"
+                ],
+                "filter": {
+                    "name": "corgi-local-cluster-bootstrap",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'corgi-local-cluster-bootstrap'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=corgi-local-cluster-bootstrap",
+                    "--package=local-cluster-bootstrap"
+                ],
+                "filter": {
+                    "name": "corgi-local-cluster-bootstrap",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'core'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=core"
+                ],
+                "filter": {
+                    "name": "core",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'corgi-client'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=corgi-client",
+                    "--package=client"
+                ],
+                "filter": {
+                    "name": "corgi-client",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'corgi-client'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=corgi-client",
+                    "--package=client"
+                ],
+                "filter": {
+                    "name": "corgi-client",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'corgi-control-plane'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=corgi-control-plane",
+                    "--package=control-plane"
+                ],
+                "filter": {
+                    "name": "corgi-control-plane",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'corgi-control-plane'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=corgi-control-plane",
+                    "--package=control-plane"
+                ],
+                "filter": {
+                    "name": "corgi-control-plane",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'corgi-server'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=corgi-server",
+                    "--package=server"
+                ],
+                "filter": {
+                    "name": "corgi-server",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'corgi-server'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=corgi-server",
+                    "--package=server"
+                ],
+                "filter": {
+                    "name": "corgi-server",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
