@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+  "async-app",
+  "rsw-app",
+  "concepts",
+  "gotchas",
+  "minigrep" 
+]

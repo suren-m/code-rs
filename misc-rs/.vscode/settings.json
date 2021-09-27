@@ -1,0 +1,43 @@
+{
+  "window.zoomLevel": 2,
+  "editor.minimap.enabled": false,
+  "editor.matchBrackets": "never",
+  "editor.renderLineHighlight": "none",
+  "editor.formatOnSave": true,
+  "files.autoSave": "off",
+  "explorer.compactFolders": false,
+  // For vim extension to send through esc mapping
+  // "keyboard.dispatch": "keyCode",
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  // Rust Analyzer 
+  // https://rust-analyzer.github.io/manual.html#vs-code
+  "rust-analyzer.updates.askBeforeDownload": true,
+  // Toggle inlay hints   
+  // ctrl + k and ctrl + i for showing docs (gh for vim extension)
+  // Only if required
+  // "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
+  // "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  //"vim.leader": "<backspace>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-f>": false,
+    "<C-k>": false
+  },
+  // exit insert mode after save
+  // requires macros extension
+  "macros": {
+    "saveAndExitVimInsertMode": [
+      "workbench.action.files.save",
+      "extension.vim_escape"
+    ]
+  },
+  "rust-analyzer.inlayHints.enable": true
+}
